@@ -24,7 +24,7 @@ public class Lanternfish {
 
         Map<Integer, Long> nextGeneration = new HashMap<>();
 
-        long currentlyAtZero = currentGeneration.getOrDefault(0, 0L);
+        long currentlyAtZero = currentGeneration.get(0);
 
         for (int i = 8; i > 0; i--) {
             nextGeneration.put(i - 1, currentGeneration.get(i));

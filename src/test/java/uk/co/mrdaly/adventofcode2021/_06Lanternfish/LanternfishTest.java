@@ -2,7 +2,6 @@ package uk.co.mrdaly.adventofcode2021._06Lanternfish;
 
 import org.junit.Before;
 import org.junit.Test;
-import uk.co.mrdaly.adventofcode2021.util.IntegerFileReader;
 import uk.co.mrdaly.adventofcode2021.util.StringFileReader;
 
 import java.util.Arrays;
