@@ -38,10 +38,6 @@ public class TheTreacheryOfWhales {
     }
 
     private long calc(long l) {
-        if (l <= 1) {
-            return l;
-        }
-
-        return l + calc(l - 1);
+        return (l * (l + 1)) / 2;
     }
 }

@@ -24,6 +24,7 @@ public class TheTreacheryOfWhalesTest {
                 .map(this::parseInput)
                 .findFirst()
                 .get();
+        System.out.println("ready!");
     }
 
     private List<Integer> parseInput(String input) {
