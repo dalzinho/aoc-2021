@@ -13,7 +13,6 @@ public class TheTreacheryOfWhales {
     private long calculateFuel(List<Integer> input, long stat, LongUnaryOperator fuelFactor) {
         return input.stream()
                 .mapToLong(i -> Math.abs(i - stat))
-                .filter(l -> l != 0)
                 .map(fuelFactor)
                 .sum();
     }
@@ -40,8 +39,8 @@ public class TheTreacheryOfWhales {
     }
 
     private long calc(long l) {
-        if (l == 1) {
-            return 1;
+        if (l <= 1) {
+            return l;
         }
 
         return l + calc(l - 1);
