@@ -19,14 +19,13 @@ public class TheTreacheryOfWhales {
 
     private int calculateMedian(List<Integer> ints) {
         Collections.sort(ints);
-        int median;
         int middle = ints.size() / 2;
+        int median = ints.get(middle);
 
         if (ints.size() % 2 == 0) {
             median = (ints.get(middle - 1) + ints.get(middle)) / 2;
-        } else {
-            median = ints.get(middle);
         }
+
         return median;
     }
 
