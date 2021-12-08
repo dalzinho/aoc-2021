@@ -36,11 +36,11 @@ src_file="$src/$puzzle_name.java"
 
 touch "$src_file"
 
-echo -e "package ${QUALIFIED_PACKAGE}.$package_name;""\r\n""public class ${puzzle_name} {""\r\n\r\n""}" >> "$src_file"
+echo -e "package ${QUALIFIED_PACKAGE}.$package_name;" >> "$src_file"
 
 test_file=$test/${puzzle_name}Test.java
 
-echo -e "package ${QUALIFIED_PACKAGE}.$package_name;""\r\n""public class ${puzzle_name}Test {""\r\n\r\n""}" >> "$test_file"
+echo -e "package ${QUALIFIED_PACKAGE}.$package_name;" >> "$test_file"
 
 res_file=$res/${next_puzzle_number}input1.txt
 
