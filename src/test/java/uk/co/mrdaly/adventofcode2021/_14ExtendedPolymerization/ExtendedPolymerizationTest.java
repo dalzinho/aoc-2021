@@ -57,9 +57,14 @@ public class ExtendedPolymerizationTest {
     }
 
     @Test
+    public void partTwo_sampleData() {
+        long actual = extendedPolymerization.partOne(sampleInput, 40);
+        assertEquals(2188189693529L, actual);
+    }
+    @Test
     public void partTwo_actualData() {
         long actual = extendedPolymerization.partOne(actualInput, 40);
-        assertEquals(1588, actual);
+        assertEquals(2984946368465L, actual);
     }
 
 }
